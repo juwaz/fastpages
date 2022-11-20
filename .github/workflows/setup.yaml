@@ -89,7 +89,7 @@ jobs:
           git rm .github/workflows/setup.yaml
           git rm .github/ISSUE_TEMPLATE/bug.md
           git rm .github/ISSUE_TEMPLATE/feature_request.md
-          git rm _word/*.docx
+          git rm _word/*.docx || true
           git add _config.yml README.md _fastpages_docs/ _action_files/settings.ini
           git commit -m'setup repo'
           git push -f --set-upstream origin fastpages-automated-setup
