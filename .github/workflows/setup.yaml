@@ -75,7 +75,7 @@ jobs:
           git config --global user.name "${GH_USERNAME}"
           git checkout -B fastpages-automated-setup
           git rm CNAME action.yml
-          git rm _notebooks/2020-02-21-introducing-fastpages.ipynb
+          git rm _notebooks/2020-02-21-introducing-fastpages.ipynb || true
           git rm _notebooks/2020-09-01-fastcore.ipynb || true
           git rm _notebooks/2020-11-17-linkcheck.ipynb || true
           git rm -rf _notebooks/fastcore_imgs
